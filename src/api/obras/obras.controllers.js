@@ -1,11 +1,60 @@
 const Obras = require("./obras.models");
 const { deleteFile } = require("../../middlewares/delete.file");
 
+/*
 const getObras = async (req, res) => {
   try {
     const allObras = await Obras.find();
     return res.status(200).json(allObras);
   } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+*/
+
+const getObras = async (req, res) => {
+  try {
+    let { page, limit } = req.query;
+    console.log(req.query)
+    const numObras = await Obras.countDocuments();
+    limit = limit ? parseInt(limit) : 10;
+    if (page && !isNaN(parseInt(page))) {
+      console.log("entro")
+      page = parseInt(page);
+      console.log(page)
+      let numPages = numObras % limit > 0 ? numObras / limit + 1 : numObras / limit;
+      if (page > numPages) page = numPages;
+      if (page < 1) page = 1;
+      const skip = (page - 1) * limit;
+      const obras = await Obras.find().skip(skip).limit(limit)
+      return res.status(200).json(
+        {
+          info: {
+            numTotal: numObras,
+            page: page,
+            limit: limit,
+            nextPage: numPages >= page + 1 ? `/obras?page=${page + 1}&limit=${limit}` : null,
+            prevPage: page != 1 ? `/obras?page=${page - 1}&limit=${limit}` : null
+          },
+          results: obras
+        }
+      )
+    } else {
+      const obras = await Obras.find().limit(limit);
+      return res.status(200).json({
+        info: {
+          numTotal: numObras,
+          page: 1,
+          limit: limit,
+          nextPage: numObras > limit ? `/obras?page=2&limit=${limit}` : null,
+          prevPage: null
+        },
+        results: obras
+      });
+    }
+
+  } catch (error) {
+    console.log(error)
     return res.status(500).json(error);
   }
 };

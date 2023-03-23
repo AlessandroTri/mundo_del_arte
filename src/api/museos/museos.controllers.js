@@ -1,11 +1,60 @@
 const Museo = require("./museos.models");
 
+/*
 const getMuseos = async (req, res) => {
   try {
     const allMuseos = await Museo.find().populate('works');
     console.log('museos' + allMuseos)
     return res.status(200).json(allMuseos);
   } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+*/
+
+const getMuseos = async (req, res) => {
+  try {
+    let { page, limit } = req.query;
+    console.log(req.query)
+    const numMuseos = await Museo.countDocuments();
+    limit = limit ? parseInt(limit) : 10;
+    if (page && !isNaN(parseInt(page))) {
+      console.log("entro")
+      page = parseInt(page);
+      console.log(page)
+      let numPages = numMuseos % limit > 0 ? numMuseos / limit + 1 : numMuseos / limit;
+      if (page > numPages) page = numPages;
+      if (page < 1) page = 1;
+      const skip = (page - 1) * limit;
+      const Museos = await Museo.find().skip(skip).limit(limit)
+      return res.status(200).json(
+        {
+          info: {
+            numTotal: numMuseos,
+            page: page,
+            limit: limit,
+            nextPage: numPages >= page + 1 ? `/museos?page=${page + 1}&limit=${limit}` : null,
+            prevPage: page != 1 ? `/museos?page=${page - 1}&limit=${limit}` : null
+          },
+          results: Museos
+        }
+      )
+    } else {
+      const Museos = await Museo.find().limit(limit);
+      return res.status(200).json({
+        info: {
+          numTotal: numMuseos,
+          page: 1,
+          limit: limit,
+          nextPage: numMuseos > limit ? `/museos?page=2&limit=${limit}` : null,
+          prevPage: null
+        },
+        results: Museos
+      });
+    }
+
+  } catch (error) {
+    console.log(error)
     return res.status(500).json(error);
   }
 };
