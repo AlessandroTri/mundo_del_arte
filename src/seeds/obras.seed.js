@@ -16,6 +16,7 @@ const obras = [
         height: 276
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: 'Saturno devorando a su hijo',
@@ -28,6 +29,7 @@ const obras = [
         height: 81
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "El Jardín de las Delicias",
@@ -40,6 +42,7 @@ const obras = [
         height: 389
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "Ritmo de otoño (número 30)",
@@ -52,6 +55,7 @@ const obras = [
         height: 525
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "Autorretrato con sombrero de paja",
@@ -64,6 +68,7 @@ const obras = [
         height: 31
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "Retrato de Juan de Pareja",
@@ -76,6 +81,7 @@ const obras = [
         height: 69
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "La Gioconda",
@@ -88,6 +94,7 @@ const obras = [
         height: 53
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "La Libertad guiando al pueblo",
@@ -100,6 +107,7 @@ const obras = [
         height: 325
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "La balsa de la Medusa",
@@ -112,6 +120,7 @@ const obras = [
         height: 716
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "Guernica",
@@ -124,6 +133,7 @@ const obras = [
         height: 776
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "Un mundo",
@@ -136,6 +146,7 @@ const obras = [
         height: 46
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
   {
     title: "El Gran Masturbador",
@@ -148,6 +159,7 @@ const obras = [
         height: 150
     },
     location: '',
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   }
 
   ];

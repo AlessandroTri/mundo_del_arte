@@ -12,8 +12,8 @@ try {
 const postObras = async (req, res) => {
     try {
       console.log(req.body);
-      const { name, location, works,foundation } = req.body;
-      const newObras = new Obras({ name, location, works,foundation}); 
+      const { title, artist, year, movement, medium, dimensions, location, image } = req.body;
+      const newObras = new Obras({ title, artist, year, movement, medium, dimensions, location, image}); 
   
       const createdObras = await newObras.save(); 
       return res.status(201).json(createdObras);

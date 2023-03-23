@@ -13,8 +13,8 @@ const getMuseos = async (req, res) => {
 const postMuseos = async (req, res) => {
   try {
     console.log(req.body);
-    const { name, location, works, foundation } = req.body;
-    const newMuseos = new Museo({ name, location, works, foundation });
+    const { name, location, description, works, foundation, image } = req.body;
+    const newMuseos = new Museo({ name, location, description, works, foundation, image });
     const createdMuseos = await newMuseos.save().populate('works');
     return res.status(201).json(createdMuseos);
   } catch (error) {
