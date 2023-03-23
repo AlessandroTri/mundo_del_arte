@@ -26,7 +26,7 @@ const getObras = async (req, res) => {
       if (page > numPages) page = numPages;
       if (page < 1) page = 1;
       const skip = (page - 1) * limit;
-      const obras = await Obras.find().skip(skip).limit(limit)
+      const obras = await Obras.find().skip(skip).limit(limit);
       return res.status(200).json(
         {
           info: {

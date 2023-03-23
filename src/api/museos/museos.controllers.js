@@ -26,7 +26,7 @@ const getMuseos = async (req, res) => {
       if (page > numPages) page = numPages;
       if (page < 1) page = 1;
       const skip = (page - 1) * limit;
-      const Museos = await Museo.find().skip(skip).limit(limit)
+      const Museos = await Museo.find().skip(skip).limit(limit).populate('works')
       return res.status(200).json(
         {
           info: {
@@ -40,7 +40,7 @@ const getMuseos = async (req, res) => {
         }
       )
     } else {
-      const Museos = await Museo.find().limit(limit);
+      const Museos = await Museo.find().limit(limit).populate('works');
       return res.status(200).json({
         info: {
           numTotal: numMuseos,
