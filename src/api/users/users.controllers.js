@@ -1,8 +1,7 @@
 const User = require('../users/users.models');
 const bcrypt = require('bcrypt');
 const { validateEmail, validatePassword, usedEmail } = require('../../utils/validators');
-const { generateSign, verifySign } = require('../../utils/jwt');
-const { isAuth, isAdmin } = require('../../middlewares/auth');
+const { generateSign } = require('../../utils/jwt');
 
 const login = async (req, res) => {
     try {
@@ -42,7 +41,8 @@ const register = async (req, res) => {
 
 const checksession = async (req, res) => {
     try {
-        return res.status(200).json(req.user)
+        console.log(req);
+        res.status(200).json(req.user)
     } catch (error) {
         return res.status(500).json(error)
     }
