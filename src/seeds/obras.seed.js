@@ -11,10 +11,7 @@ const obras = [
     year: 1656,
     movement: "Baroque",
     medium: 'Oil on canvas',
-    dimensions: {
-        width: 320,
-        height: 276
-    },
+    dimensions: "320x276cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -24,10 +21,7 @@ const obras = [
     year: 1823,
     movement: "Romanticism",
     medium: 'Oil on plaster transferred to canvas',
-    dimensions: {
-        width: 143,
-        height: 81
-    },
+    dimensions: "143x81cm",  
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -37,10 +31,7 @@ const obras = [
     year: 1510,
     movement: "Northern Renaissance",
     medium: "Oil on panel",
-    dimensions: {
-        width: 220,
-        height: 389
-    },
+    dimensions: "220x389cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -50,10 +41,7 @@ const obras = [
     year: 1950,
     movement: "Abstract Expressionism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 266,
-        height: 525
-    },
+    dimensions: "266x525cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -63,10 +51,7 @@ const obras = [
     year: 1887,
     movement: "Post-Impressionism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 40,
-        height: 31
-    },
+    dimensions: "40x31cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -76,10 +61,7 @@ const obras = [
     year: 1650,
     movement: "Baroque",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 81,
-        height: 69
-    },
+    dimensions: "81x69cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -89,10 +71,7 @@ const obras = [
     year: 1506,
     movement: "Italian Renaissance",
     medium: "Oil on poplar panel",
-    dimensions: {
-        width: 77,
-        height: 53
-    },
+    dimensions: "77x53cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -102,10 +81,7 @@ const obras = [
     year: 1830,
     movement: "Romanticism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 260,
-        height: 325
-    },
+    dimensions: "260x325cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -115,10 +91,7 @@ const obras = [
     year: 1819,
     movement: "Romanticism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 491,
-        height: 716
-    },
+    dimensions: "491x716cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -128,10 +101,7 @@ const obras = [
     year: 1937,
     movement: "Cubism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 349,
-        height: 776
-    },
+    dimensions: "349x776cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -141,10 +111,7 @@ const obras = [
     year: 1929,
     movement: "Surrealism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 61,
-        height: 46
-    },
+    dimensions: "61x46cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   },
@@ -154,10 +121,7 @@ const obras = [
     year: 1929,
     movement: "Surrealism",
     medium: "Oil on canvas",
-    dimensions: {
-        width: 110,
-        height: 150
-    },
+    dimensions: "110x150cm",
     location: '',
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
   }

@@ -11,7 +11,7 @@ const get = async () => {
 };
 
 const drawMuseos = (museos) => {
-  const divPadre$$ = document.querySelector(".divPadre");
+  const divPadre$$ = document.querySelector(".divPadreMuseos");
   for (let i = 0; i < museos.length; i++) {
     const museo = museos[i];
     console.log(museo);

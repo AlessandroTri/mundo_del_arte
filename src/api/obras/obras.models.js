@@ -10,7 +10,7 @@ const obrasSchema = new Schema(
     year: { type: Number, required: true },
     movement: { type: String, required: true },
     medium: { type: String, required: true },
-    dimensions: { type: Object, required: false }, // revisar el objeto de dimension
+    dimensions: { type: String, required: false }, // revisar el objeto de dimension
     location: { type: String, required: false }, // cambiar en el futuro a true
     image: {type: String, required: false},
   },
