@@ -15,7 +15,7 @@ const museos = [
         "641c2016f8d8dd132db1e428",
       ],
       foundation: 1819,
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+      image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585266/obras_de_arte/Museo_del_Prado_s12f8l.jpg",
     },
     {
       name: "Museo Metropolitano de Arte",
@@ -27,7 +27,7 @@ const museos = [
         "641c2016f8d8dd132db1e42b",
       ],
       foundation: 1870,
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+      image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585265/obras_de_arte/Museo_Metropolitano_de_Arte_z8vxzy.jpg",
     },
     {
       name: "Museo del Louvre",
@@ -39,7 +39,7 @@ const museos = [
         "641c2016f8d8dd132db1e42e",
       ],
       foundation: 1793,
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+      image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585265/obras_de_arte/Museo_del_Louvre_zikgwn.webp",
     },
     {
       name: "Museo Nacional Centro de Arte Reina Sofía",
@@ -51,7 +51,7 @@ const museos = [
         "641c2016f8d8dd132db1e431",
       ],
       foundation: 1992,
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+      image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585265/obras_de_arte/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_zubzn2.png",
     },
   ];
 

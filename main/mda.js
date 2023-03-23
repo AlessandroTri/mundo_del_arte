@@ -16,16 +16,16 @@ const drawMuseos = (museos) => {
     const museo = museos[i];
     console.log(museo);
     const divHijo$$ = document.createElement("div");
-    divHijo$$.className = "divHijo";
+    divHijo$$.className = "divPadreMuseos__divHijo";
     divHijo$$.innerHTML = `
-        <div class="divPadre__hijo--arriba">
-        <img class="divPadre__hijo--arriba--img" src="${museo.image}" alt="${museo.name}">
+        <div class="divPadreMuseos__divHijo--arriba">
+        <img class="divPadreMuseos__divHijo--arriba--img" src="${museo.image}" alt="${museo.name}">
         </div>
-        <div class="divPadre__hijo--abajo">
-            <a href=""><h1 class="divPadre__hijo--abajo--nombre">${museo.name}</h1></a>
-            <h2 class="divPadre__hijo--abajo--localizacion">${museo.location}</h2>
-            <h3 class="divPadre__hijo--abajo--fecha">${museo.foundation}</h3>
-            <p class="divPadre__hijo--abajo--descripcion">${museo.description}</p>
+        <div class="divPadreMuseos__divHijo--abajo">
+            <a href=""><h1 class="divPadreMuseos__divHijo--abajo--nombre">${museo.name}</h1></a>
+            <h2 class="divPadreMuseos__divHijo--abajo--localizacion">${museo.location}</h2>
+            <h3 class="divPadreMuseos__divHijo--abajo--fecha">${museo.foundation}</h3>
+            <p class="divPadreMuseos__divHijo--abajo--descripcion">${museo.description}</p>
         </div>
         `;
     divPadre$$.appendChild(divHijo$$);

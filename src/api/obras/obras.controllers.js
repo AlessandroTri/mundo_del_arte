@@ -1,4 +1,5 @@
 const Obras = require("./obras.models");
+const { deleteFile } = require("../../middlewares/delete.file");
 
 const getObras = async (req, res) => {
   try {
@@ -22,34 +23,59 @@ const postObras = async (req, res) => {
     }
   };
 
-   
+
 const putObras = async (req, res) => {
   try {
-    const { id } = req.params;
-    const putObras = new Obras(req.body);
-    putObras._id = id;
+      const {id} = req.params;
+      const putObras = new Obras(req.body);
+      putObras._id = id;
 
-    const updateObras = await Obras.findByIdAndUpdate(id, putObras, { new: true });
-    if (!updateObras) {
-      return res.status(404).json({ message: "Obras not found" });
-    }
-    return res.status(200).json(updateObras);
+      if(req.file) {
+          putObras.image = req.file.path;
+      }
+
+      const updateObras = await Obras.findByIdAndUpdate(id, putObras);
+      if (updateObras.image) {
+          deleteFile(updateObras.image);
+      }
+      if (!updateObras) {
+        return res.status(404).json({ message: "Obras not found" });
+      }
+      return res.status(200).json(updateObras);
   } catch (error) {
-    return res.status(500).json(error);
+      return res.status(500).json(error)
   }
-};
+}
+
+
+// const deleteObras = async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const deleteObras = await Obras.findByIdAndDelete(id);
+//     if (!deleteObras) {
+//       return res.status(404).json({ message: "Obras not found" });
+//     }
+//   } catch (error) {
+//     return res.status(500).json(error);
+//   }
+// };
+
 
 const deleteObras = async (req, res) => {
   try {
-    const { id } = req.params;
-    const deleteObras = await Obras.findByIdAndDelete(id);
-    if (!deleteObras) {
-      return res.status(404).json({ message: "Obras not found" });
-    }
+      const {id} = req.params;
+      const deleteObras = await Obras.findByIdAndDelete(id);
+      if (!deleteObras) {
+          return res.status(404).json({message: "Obras not found"});
+      }
+      if (deleteObras.image) {
+          deleteFile(deleteObras.image);
+      }
+      return res.status(200).json(deleteObras);
   } catch (error) {
-    return res.status(500).json(error);
+      return res.status(500).json(error)
   }
-};
+}
 
 
 

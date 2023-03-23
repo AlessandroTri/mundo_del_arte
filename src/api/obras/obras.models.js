@@ -12,7 +12,7 @@ const obrasSchema = new Schema(
     medium: { type: String, required: true },
     dimensions: { type: String, required: false }, // revisar el objeto de dimension
     location: { type: String, required: false }, // cambiar en el futuro a true
-    image: {type: String, required: false},
+    image: {type: String, required: true, default: "https://www.touchtaiwan.com/images/default.jpg"},
   },
   {
     timestamps: true,

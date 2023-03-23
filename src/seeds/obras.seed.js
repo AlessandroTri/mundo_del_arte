@@ -13,7 +13,7 @@ const obras = [
     medium: 'Oil on canvas',
     dimensions: "320x276cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Las_Meninas_pzloc9.jpg",
   },
   {
     title: 'Saturno devorando a su hijo',
@@ -23,7 +23,7 @@ const obras = [
     medium: 'Oil on plaster transferred to canvas',
     dimensions: "143x81cm",  
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585919/obras_de_arte/Saturno_devorando_a_su_hijo_kg1idv.png",
   },
   {
     title: "El Jardín de las Delicias",
@@ -33,7 +33,7 @@ const obras = [
     medium: "Oil on panel",
     dimensions: "220x389cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585921/obras_de_arte/El_Jard%C3%ADn_de_las_Delicias_ssdr0a.jpg",
   },
   {
     title: "Ritmo de otoño (número 30)",
@@ -43,7 +43,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "266x525cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Ritmo_de_oto%C3%B1o_n%C3%BAmero_30_ugrbtr.png",
   },
   {
     title: "Autorretrato con sombrero de paja",
@@ -53,7 +53,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "40x31cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Autorretrato_con_sombrero_de_paja_kj5dxc.jpg",
   },
   {
     title: "Retrato de Juan de Pareja",
@@ -63,7 +63,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "81x69cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Retrato_de_Juan_de_Pareja_z20vyd.jpg",
   },
   {
     title: "La Gioconda",
@@ -73,7 +73,7 @@ const obras = [
     medium: "Oil on poplar panel",
     dimensions: "77x53cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_Gioconda_m7qv0f.jpg",
   },
   {
     title: "La Libertad guiando al pueblo",
@@ -83,7 +83,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "260x325cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_Libertad_guiando_al_pueblo_xz3nql.jpg",
   },
   {
     title: "La balsa de la Medusa",
@@ -93,7 +93,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "491x716cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_balsa_de_la_Medusa_cambsr.jpg",
   },
   {
     title: "Guernica",
@@ -103,7 +103,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "349x776cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Guernica_jkrb0o.jpg",
   },
   {
     title: "Un mundo",
@@ -113,7 +113,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "61x46cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Un_mundo_qu8glu.jpg",
   },
   {
     title: "El Gran Masturbador",
@@ -123,7 +123,7 @@ const obras = [
     medium: "Oil on canvas",
     dimensions: "110x150cm",
     location: '',
-    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Teniers_d._J._008.jpg/640px-David_Teniers_d._J._008.jpg",
+    image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585919/obras_de_arte/El_Gran_Masturbador_wriclp.png",
   }
 
   ];
