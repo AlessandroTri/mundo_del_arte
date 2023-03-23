@@ -10,7 +10,6 @@ const getObras = async (req, res) => {
 };
 
 const postObras = async (req, res) => {
-<<<<<<< HEAD
     try {
       console.log(req.body);
       const { title, artist, year, movement, medium, dimensions, location, image } = req.body;
@@ -22,20 +21,8 @@ const postObras = async (req, res) => {
       return res.status(500).json(error);
     }
   };
-=======
-  try {
-    console.log(req.body);
-    const { name, location, works, foundation } = req.body;
-    const newObras = new Obras({ name, location, works, foundation });
->>>>>>> 555e58fd7c30e2d99673d3d84f5a64b9d119d99d
 
-    const createdObras = await newObras.save();
-    return res.status(201).json(createdObras);
-  } catch (error) {
-    return res.status(500).json(error);
-  }
-};
-
+   
 const putObras = async (req, res) => {
   try {
     const { id } = req.params;
