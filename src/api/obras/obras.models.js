@@ -10,8 +10,8 @@ const obrasSchema = new Schema(
     year: { type: Number, required: true },
     movement: { type: String, required: true },
     medium: { type: String, required: true },
-    dimensions: { type: String, required: false }, // revisar el objeto de dimension
-    location: { type: Schema.Types.ObjectId, ref: 'museos'}, // cambiar en el futuro a true
+    dimensions: { type: String, required: false }, 
+    location: { type: Schema.Types.ObjectId, ref: 'museos'}, 
     image: {type: String, required: true, default: "https://www.touchtaiwan.com/images/default.jpg"},
   },
   {

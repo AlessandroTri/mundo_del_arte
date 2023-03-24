@@ -11,7 +11,7 @@ const {
 } = require("./obras.controllers");
 
 router.get("/", getObras);
-router.post("/", postObras);
+router.post("/", upload.single('image'), postObras);
 router.put("/:id", upload.single('image'), putObras);
 router.delete("/:id", deleteObras);
 

@@ -1,16 +1,7 @@
 const Obras = require("./obras.models");
 const { deleteFile } = require("../../middlewares/delete.file");
+const {ObjectId} = require("mongodb");
 
-/*
-const getObras = async (req, res) => {
-  try {
-    const allObras = await Obras.find();
-    return res.status(200).json(allObras);
-  } catch (error) {
-    return res.status(500).json(error);
-  }
-};
-*/
 
 const getObras = async (req, res) => {
   try {
@@ -61,10 +52,13 @@ const getObras = async (req, res) => {
 
 const postObras = async (req, res) => {
     try {
-      console.log(req.body);
-      const { title, artist, year, movement, medium, dimensions, location, image } = req.body;
-      const newObras = new Obras({ title, artist, year, movement, medium, dimensions, location, image}); 
-  
+      const objectId = new ObjectId(req.params.location);
+      let { title, artist, year, movement, medium, dimensions, location, image } = req.body;
+      let newObras = new Obras({ title, artist, year, movement, medium, dimensions, location, image}); 
+      if (req.file) {
+        newObras.image = req.file.path;
+        location = objectId;
+      }
       const createdObras = await newObras.save(); 
       return res.status(201).json(createdObras);
     } catch (error) {
@@ -72,7 +66,7 @@ const postObras = async (req, res) => {
     }
   };
 
-
+ 
 const putObras = async (req, res) => {
   try {
       const {id} = req.params;
@@ -96,18 +90,6 @@ const putObras = async (req, res) => {
   }
 }
 
-
-// const deleteObras = async (req, res) => {
-//   try {
-//     const { id } = req.params;
-//     const deleteObras = await Obras.findByIdAndDelete(id);
-//     if (!deleteObras) {
-//       return res.status(404).json({ message: "Obras not found" });
-//     }
-//   } catch (error) {
-//     return res.status(500).json(error);
-//   }
-// };
 
 
 const deleteObras = async (req, res) => {

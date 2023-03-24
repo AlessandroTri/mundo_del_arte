@@ -1,5 +1,5 @@
 const express = require("express");
-
+const upload = require('../../middlewares/upload.file');
 const router = express.Router();
 
 const {
@@ -10,8 +10,8 @@ const {
 } = require("./museos.controllers");
 
 router.get("/", getMuseos);
-router.post("/", postMuseos);
-router.put("/:id", putMuseos);
+router.post("/", upload.single('image'), postMuseos);
+router.put("/:id", upload.single('image'), putMuseos);
 router.delete("/:id", deleteMuseos);
 
 module.exports = router;
