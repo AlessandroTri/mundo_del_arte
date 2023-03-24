@@ -59,10 +59,12 @@ const postMuseos = async (req, res) => {
       newMuseos.image = req.file.path;
       location = objectId;
     }
-    const createdMuseos = await newMuseos.save().populate('works');
+    const createdMuseos = await newMuseos.save();
     return res.status(201).json(createdMuseos);
   } catch (error) {
+    console.log(error);
     return res.status(500).json(error);
+    
   }
 };
 
