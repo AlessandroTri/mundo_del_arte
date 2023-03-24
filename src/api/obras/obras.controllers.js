@@ -17,7 +17,7 @@ const getObras = async (req, res) => {
     let { page, limit } = req.query;
     console.log(req.query)
     const numObras = await Obras.countDocuments();
-    limit = limit ? parseInt(limit) : 10;
+    limit = limit ? parseInt(limit) : 20;
     if (page && !isNaN(parseInt(page))) {
       console.log("entro")
       page = parseInt(page);
@@ -26,7 +26,7 @@ const getObras = async (req, res) => {
       if (page > numPages) page = numPages;
       if (page < 1) page = 1;
       const skip = (page - 1) * limit;
-      const obras = await Obras.find().skip(skip).limit(limit);
+      const obras = await Obras.find().skip(skip).limit(limit).populate("location");
       return res.status(200).json(
         {
           info: {
@@ -40,7 +40,7 @@ const getObras = async (req, res) => {
         }
       )
     } else {
-      const obras = await Obras.find().limit(limit);
+      const obras = await Obras.find().limit(limit).populate("location");
       return res.status(200).json({
         info: {
           numTotal: numObras,

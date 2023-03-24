@@ -2,12 +2,13 @@ const get = async () => {
     try {
       const res = await fetch("http://localhost:5000/obras");
       const resJson = await res.json();
-      // console.log(resJson);
+       console.log(resJson);
       return resJson;
     } catch (error) {
       console.log(error);
     }
   };
+
 
 const drawObras = (obras) => {
   const divPadre$$ = document.querySelector(".divPadreObras");
@@ -35,19 +36,10 @@ const drawObras = (obras) => {
 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   const init = async () => {
-    const obras = await get();
-  
+    const infoResult = await get();
+    const obras = infoResult.results;
+  console.log(obras);
    drawObras(obras);
   };
   

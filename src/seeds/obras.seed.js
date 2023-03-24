@@ -12,7 +12,7 @@ const obras = [
     movement: "Baroque",
     medium: 'Oil on canvas',
     dimensions: "320x276cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e7"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Las_Meninas_pzloc9.jpg",
   },
   {
@@ -22,7 +22,7 @@ const obras = [
     movement: "Romanticism",
     medium: 'Oil on plaster transferred to canvas',
     dimensions: "143x81cm",  
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e7"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585919/obras_de_arte/Saturno_devorando_a_su_hijo_kg1idv.png",
   },
   {
@@ -32,7 +32,7 @@ const obras = [
     movement: "Northern Renaissance",
     medium: "Oil on panel",
     dimensions: "220x389cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e7"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585921/obras_de_arte/El_Jard%C3%ADn_de_las_Delicias_ssdr0a.jpg",
   },
   {
@@ -42,7 +42,7 @@ const obras = [
     movement: "Abstract Expressionism",
     medium: "Oil on canvas",
     dimensions: "266x525cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e8"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Ritmo_de_oto%C3%B1o_n%C3%BAmero_30_ugrbtr.png",
   },
   {
@@ -52,7 +52,7 @@ const obras = [
     movement: "Post-Impressionism",
     medium: "Oil on canvas",
     dimensions: "40x31cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e8"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Autorretrato_con_sombrero_de_paja_kj5dxc.jpg",
   },
   {
@@ -62,7 +62,7 @@ const obras = [
     movement: "Baroque",
     medium: "Oil on canvas",
     dimensions: "81x69cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e8"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585920/obras_de_arte/Retrato_de_Juan_de_Pareja_z20vyd.jpg",
   },
   {
@@ -72,7 +72,7 @@ const obras = [
     movement: "Italian Renaissance",
     medium: "Oil on poplar panel",
     dimensions: "77x53cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e9"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_Gioconda_m7qv0f.jpg",
   },
   {
@@ -82,7 +82,7 @@ const obras = [
     movement: "Romanticism",
     medium: "Oil on canvas",
     dimensions: "260x325cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e9"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_Libertad_guiando_al_pueblo_xz3nql.jpg",
   },
   {
@@ -92,7 +92,7 @@ const obras = [
     movement: "Romanticism",
     medium: "Oil on canvas",
     dimensions: "491x716cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92e9"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/La_balsa_de_la_Medusa_cambsr.jpg",
   },
   {
@@ -102,7 +102,7 @@ const obras = [
     movement: "Cubism",
     medium: "Oil on canvas",
     dimensions: "349x776cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92ea"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Guernica_jkrb0o.jpg",
   },
   {
@@ -112,7 +112,7 @@ const obras = [
     movement: "Surrealism",
     medium: "Oil on canvas",
     dimensions: "61x46cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92ea"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585918/obras_de_arte/Un_mundo_qu8glu.jpg",
   },
   {
@@ -122,7 +122,7 @@ const obras = [
     movement: "Surrealism",
     medium: "Oil on canvas",
     dimensions: "110x150cm",
-    location: '',
+    location: {"_id": "641d7afa9c02a136199d92ea"},
     image:"https://res.cloudinary.com/du8iicmp4/image/upload/v1679585919/obras_de_arte/El_Gran_Masturbador_wriclp.png",
   }
 

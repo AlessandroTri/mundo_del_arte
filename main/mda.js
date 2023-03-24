@@ -34,9 +34,11 @@ const drawMuseos = (museos) => {
 
 // aqui esta nuestra funcion init
 const init = async () => {
-  const museos = await get();
-
+  const infoResult = await get();
+  const museos = infoResult.results;
+//console.log(museos.results);
   drawMuseos(museos);
+
 };
 
 init();
