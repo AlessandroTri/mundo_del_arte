@@ -1,0 +1,51 @@
+
+.mainMuseos{
+    padding-top: 70px;
+    .divPadreMuseos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__divHijo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &--arriba{
+                width: 80%;
+                &--img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--abajo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // padding: 0px 100px;
+                width: 70%;
+                margin: 30px 0px 60px 0px;
+                text-align: center;
+                h1{
+                    font-size: 30px;
+                    margin: 10px;
+                }
+                h2{
+                    font-size: 20px;
+                    margin: 5px;
+                }
+                h3{
+                    font-size: 15px;
+                    margin: 5px;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 5px 0px 20px 0px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    
+
+}

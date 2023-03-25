@@ -1,7 +1,7 @@
 // aqui esta nuestro fetch
 const get = async () => {
   try {
-    const res = await fetch("http://localhost:5000/museos");
+    const res = await fetch("http://localhost:5000/museos"); 
     const resJson = await res.json();
     //console.log(resJson);
     return resJson;

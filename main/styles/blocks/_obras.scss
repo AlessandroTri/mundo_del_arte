@@ -1,0 +1,34 @@
+
+.mainObras{
+    margin-top: 70px;
+    img{
+        width: 500px;
+    }
+    .divPadreObras{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__divHijoObras{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &--abajo{
+                margin: 20px 0px 40px 0px;
+                text-align: center;
+                h1{
+                    font-size: 30px;
+                    margin: 10px;
+                }
+                h2{
+                    font-size: 20px;
+                    margin: 10px;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 10px;
+                }
+            }
+    }
+}
+}

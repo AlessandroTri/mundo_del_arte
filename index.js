@@ -7,7 +7,7 @@ const routerMuseo = require('./src/api/museos/museos.routers');
 const routerObras = require('./src/api/obras/obras.routers');
 const routerUser = require('./src/api/users/users.routers');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;  
 
 cloudinary.config(
     {
@@ -27,7 +27,7 @@ app.use((req, res , next) => {
 })
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:4200", "http://nombre.vercel.com", "http://localhost:5000", "http://127.0.0.1:5500"],
+    origin: ["http://localhost:3000", "http://localhost:4200", "http://nombre.vercel.com", "http://localhost:5000", "http://localhost:8000", "http://127.0.0.1:5500"],
     credentials: true
 }))
 
